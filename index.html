@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link herf="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+
+    <title>Slide-Image</title>
+    <style>
+        header h1 {
+            text-align: right;
+            font-weight: bold;
+            background-color: rgb(50, 37, 83);
+            width: 100%;
+            height: 40%;
+            float: right;
+            margin: 0%;
+            padding: 40px;
+
+        }
+
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: florawhite;
+        }
+
+        .Menu {
+            margin: 0%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .Menu li {
+            display: inline-block;
+            padding: 10px;
+        }
+
+        .Menu li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        .dropdown li {
+            display: block;
+        }
+
+        .Menu li:nth-child(2):hover #dropdown1,
+        .Menu li:nth-child(3):hover #dropdown2 {
+            display: block;
+        }
+
+        .Menu li:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        #dropdown1,
+        #dropdown2 {
+            position: absolute;
+            width: auto;
+            display: none;
+            max-width: 150px;
+            top: auto;
+            background-color: greenyellow;
+            padding: 0%;
+        }
+
+        #dropdown1 li,
+        #dropdown2 li {
+            display: block;
+        }
+
+        #dropdown1 li a,
+        #dropdown2 li a {
+            color: blue;
+        }
+
+        #dropdown1 li a li:hover,
+        #dropdown2 li a li:hover {
+            background-color: goldenrod;
+        }
+
+        footer h2 {
+            text-align: center;
+            font-weight: bold;
+            background-color: rgb(83, 37, 37);
+            width: 100%;
+            height: auto;
+            margin: 0%;
+            padding: 0;
+            
+        }
+        img {
+        
+        border: 2px solid steelblue;
+      }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1 style="color:white;">Pharmacy</h1>
+    </header>
+
+    <nav>
+        <ul class="Menu">
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">Our Medicines</a>
+                <ul id="dropdown1">
+                    <li><a href="#">Fever</a></li>
+                    <li><a href="#">Muscle Pains</a></li>
+                    <li><a href="#">Cough &Cold</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Health Care</a>
+                <ul id="dropdown2">
+                    <li><a href="#">Body Care</a></li>
+                    <li><a href="#">Skin Care</a></li>
+                    <li><a href="#">Home Care</a></li>
+                    <li><a href="#">Personal Care</a></li>
+                    <li><a href="#">Pet Care</a></li>
+                </ul>
+            </li>
+            <li><a href="#">lab Test</a></li>
+        </ul>
+    </nav>
+   
+    <div class="slider-frame">
+        <div class="slide-images">
+            <div class="img-container">
+                <img src="Images/Animation/ani1.jpg"> </div>
+                <div class="img-container">
+                    <img src="Images/Animation/ani2.jpg"> </div>
+                    <div class="img-container">
+                        <img src="Images/Animation/ani3.jpg"> </div>
+                        <div class="img-container">
+                            <img src="Images/Animation/ani4.jpg" ></div>
+                            <div class="img-container">
+                                <img src="Images/Animation/ani5.jpg"> 
+                            </div>
+
+                            </div>
+                            
+
+                        </div>
+
+                        <footer>
+                            <h2 style="color:white;">@copyright. Only for demonstration purpose</h2>
+                        </footer>         
+
+                        
+</body>
+
+</html>
